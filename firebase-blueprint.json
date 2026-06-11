@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Stores user scores, achievements, badges, and completed modules",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The unique user ID" },
+        "email": { "type": "string", "description": "User's registered email address" },
+        "name": { "type": "string", "description": "Display name of the student" },
+        "score": { "type": "number", "description": "Level or XP score" },
+        "modulesCompleted": { "type": "object", "description": "Map of module IDs to completion states" },
+        "badges": { "type": "array", "description": "List of awarded badges" },
+        "quizHistory": { "type": "array", "description": "List of completed quiz scores" }
+      },
+      "required": ["uid", "email", "score"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Direct user profile document keyed by security auth uid"
+    }
+  }
+}

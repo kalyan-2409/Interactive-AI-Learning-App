@@ -1,0 +1,6 @@
+{
+  "name": "AI Spark Learning",
+  "description": "An interactive full-stack learning platform exploring Cell Biology, Solar Orbit Physics, and Atomic Chemistry with visual simulations, 3s/2.5D builders, custom quizzes, and real-time AI-guided tutor explanations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

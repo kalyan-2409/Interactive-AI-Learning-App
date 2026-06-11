@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Beautiful custom glassy card styling for Light Mode */
+.glass-panel {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(226, 232, 240, 0.85) !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04) !important;
+  border-radius: 1rem !important;
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(226, 232, 240, 0.75) !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.01) !important;
+  transition: all 0.3s ease !important;
+}
+
+.glass-card:hover {
+  border-color: #c7d2fe !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.06) !important;
+}
+
+/* Custom interactive pulse effects */
+.radial-pulse {
+  animation: pulse-ring 2.5s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+
+/* -------------------------------------------------------------
+   COMPREHENSIVE MODERN CONTRASTY LIGHT THEME FOR SCIENTIFIC LABS
+   ------------------------------------------------------------- */
+
+/* Page Background Overrides */
+.bg-slate-950 {
+  background-color: #f1f5f9 !important; /* Elegant light slate root background */
+}
+
+/* Sidebar & Header Panel Color Overrides */
+.bg-slate-900 {
+  background-color: #ffffff !important; /* Sidebar & main content blocks are pure white */
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 8px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+/* Semi-transparent Light Mode panels */
+.bg-slate-950\/80 {
+  background-color: rgba(248, 250, 252, 0.92) !important;
+}
+
+.bg-slate-950\/60 {
+  background-color: rgba(241, 245, 249, 0.8) !important;
+}
+
+.bg-slate-950\/40 {
+  background-color: rgba(241, 245, 249, 0.5) !important;
+}
+
+.bg-slate-950\/20 {
+  background-color: rgba(241, 245, 249, 0.25) !important;
+}
+
+.bg-slate-900\/90 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05) !important;
+}
+
+.bg-slate-900\/60 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02) !important;
+}
+
+.bg-slate-900\/40 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.bg-slate-850\/40 {
+  background-color: rgba(241, 245, 249, 0.6) !important;
+}
+
+.bg-slate-850 {
+  background-color: #f8fafc !important;
+}
+
+.bg-slate-800 {
+  background-color: #f1f5f9 !important;
+}
+
+.bg-indigo-950\/40 {
+  background-color: rgba(79, 70, 229, 0.08) !important;
+}
+
+.bg-[#1e1b4b]\/60 {
+  background-color: rgba(79, 70, 229, 0.04) !important;
+}
+
+.bg-violet-950\/25 {
+  background-color: rgba(124, 58, 237, 0.06) !important;
+}
+
+.bg-slate-80\/40 {
+  background-color: rgba(241, 245, 249, 0.4) !important;
+}
+
+/* Border Overrides to clean slate-200 */
+.border-slate-800, 
+.border-slate-805, 
+.border-slate-850, 
+.border-slate-900,
+.border-slate-750,
+.border-slate-710,
+.border-slate-705\/30 {
+  border-color: #e2e8f0 !important;
+}
+
+.border-slate-700\/60,
+.border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+.border-slate-850\/80 {
+  border-color: rgba(226, 232, 240, 0.8) !important;
+}
+
+/* General Typography & Color Overrides */
+.text-white {
+  color: #0f172a !important; /* crisp slate-900 text */
+}
+
+.text-slate-100 {
+  color: #1e293b !important; /* elegant slate-800 */
+}
+
+.text-slate-200 {
+  color: #334155 !important; /* elegant slate-700 */
+}
+
+.text-slate-300 {
+  color: #475569 !important; /* slate-600 */
+}
+
+.text-slate-400 {
+  color: #64748b !important; /* slate-500 */
+}
+
+.text-slate-450 {
+  color: #475569 !important;
+}
+
+.text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Beautiful vivid highlights with superb readability on light canvases */
+.text-indigo-400 {
+  color: #4f46e5 !important; /* solid indigo-600 */
+}
+
+.text-indigo-300 {
+  color: #3730a3 !important; /* deep indigo-850 */
+}
+
+.text-indigo-200 {
+  color: #312e81 !important; /* deep indigo-900 */
+}
+
+.text-violet-400 {
+  color: #7c3aed !important; /* solid violet-600 */
+}
+
+.text-violet-300 {
+  color: #6d28d9 !important; /* deep violet-700 */
+}
+
+.text-blue-400 {
+  color: #0284c7 !important; /* blue-600 */
+}
+
+.text-blue-300 {
+  color: #1d4ed8 !important; /* blue-700 */
+}
+
+.text-emerald-400 {
+  color: #16a34a !important; /* emerald-600 style */
+}
+
+.text-emerald-300 {
+  color: #15803d !important; /* emerald-700 */
+}
+
+.text-amber-400 {
+  color: #d97706 !important; /* amber-600 style */
+}
+
+.text-amber-300 {
+  color: #b45309 !important; /* amber-700 style */
+}
+
+.text-pink-400 {
+  color: #db2777 !important; /* pink-600 style */
+}
+
+.text-pink-300 {
+  color: #be185d !important; /* pink-700 */
+}
+
+/* Special text color inside dark containers/badges/primary selections */
+.bg-indigo-600 *, 
+.bg-indigo-500 *, 
+.bg-violet-600 *, 
+.bg-emerald-600 *, 
+button.bg-indigo-600 *, 
+button.bg-violet-600 *,
+.text-white-force {
+  color: #ffffff !important;
+}
+
+/* Interactive elements selected */
+.bg-indigo-600 {
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+}
+
+/* Message layouts user bubble versus system response bubble */
+.bg-violet-600 {
+  background-color: #7c3aed !important;
+  color: #ffffff !important;
+}
+
+/* Buttons and States */
+.hover\:bg-slate-850\/40:hover {
+  background-color: #f1f5f9 !important;
+}
+
+.hover\:bg-slate-900:hover {
+  background-color: #e2e8f0 !important;
+}
+
+.hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+.hover\:border-slate-700\/60:hover,
+.hover\:border-slate-700:hover {
+  border-color: #94a3b8 !important;
+}
+
+.bg-slate-950 .text-indigo-400 {
+  color: #4f46e5 !important;
+}
+
+/* Inputs and interactive forms */
+input {
+  color: #0d1117 !important;
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+input::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Interactive custom elements (Bohr atom rings, guides) */
+circle[stroke="#334155"] {
+  stroke: #94a3b8 !important;
+}
+
+polyline[stroke="#fbbf24"] {
+  stroke: #d97706 !important;
+}
+
+line[stroke="#cbd5e1"], circle[stroke="#cbd5e1"] {
+  stroke: #cbd5e1 !important;
+}
+
+/* Sci-fi grids & grids overlay background helper for Light Mode */
+.absolute.inset-0.bg-\[linear-gradient\(to_right\,\#0f172a_1px\,transparent_1px\)\,\-linear-gradient\(to_bottom\,\#0f172a_1px\,transparent_1px\)\] {
+  background-image: 
+    linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px) !important;
+}
+
+/* Stars backgrounds */
+.absolute.inset-0.bg-\[radial-gradient\(\#1e293b_1px\,transparent_1px\)\] {
+  background-image: radial-gradient(#94a3b8 1px, transparent 1px) !important;
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
