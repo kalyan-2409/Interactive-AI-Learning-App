@@ -1,20 +1,59 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# AI-Powered Interactive Learning Application
 
-# Run and deploy your AI Studio app
+An AI-powered educational platform that makes learning engaging through interactive 3D/2.5D visualizations, simulations, quizzes, and personalized AI explanations. The application helps students understand complex concepts through visual learning, hands-on practice, and intelligent tutoring.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/3134750d-6903-4ac9-bd5c-ed49cdebbe5d
+* AI-powered learning assistant
+* Interactive 3D/2.5D models
+* Real-time simulations
+* AI-generated quizzes
+* Personalized explanations
+* Progress tracking and analytics
+* Responsive and user-friendly interface
 
-## Run Locally
+## Technologies Used
 
-**Prerequisites:**  Node.js
+* React.js / Next.js
+* Firebase
+* Gemini AI API
+* Three.js
+* JavaScript
+* HTML & CSS
 
+## Objective
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+To enhance student learning by combining Artificial Intelligence, visual content, and interactive experiences into a single platform that improves understanding, engagement, and knowledge retention.
+# AI-Powered Interactive Learning Application
+
+An AI-powered educational platform that makes learning engaging through interactive 3D/2.5D visualizations, simulations, quizzes, and personalized AI explanations. The application helps students understand complex concepts through visual learning, hands-on practice, and intelligent tutoring.
+
+## Features
+
+* AI-powered learning assistant
+* Interactive 3D/2.5D models
+* Real-time simulations
+* AI-generated quizzes
+* Personalized explanations
+* Progress tracking and analytics
+* Responsive and user-friendly interface
+
+## Technologies Used
+
+* React.js / Next.js
+* Firebase
+* Gemini AI API
+* Three.js
+* JavaScript
+* HTML & CSS
+
+## Objective
+
+To enhance student learning by combining Artificial Intelligence, visual content, and interactive experiences into a single platform that improves understanding, engagement, and knowledge retention.
+
+Screenshots of my project:
+
+<img width="1470" height="871" alt="Screenshot 2026-06-11 at 8 09 00 PM" src="https://github.com/user-attachments/assets/3411810a-bff7-46c1-bca9-22c9e6bb7106" />
+<img width="1470" height="871" alt="Screenshot 2026-06-11 at 8 09 00 PM" src="https://github.com/user-attachments/assets/9428bfd2-72fa-4078-80ed-b2e894a24f45" />
+<img width="1470" height="871" alt="Screenshot 2026-06-11 at 8 08 46 PM" src="https://github.com/user-attachments/assets/05f04b9d-ceaa-414b-beaa-eb9eb82d2505" />
+
